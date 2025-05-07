@@ -32,7 +32,7 @@ public class Perfil {
     // Método para eliminar un amigo 
     public void eliminarAmigo(String amigo) {
     		listaAmigos.remove(amigo);  
-        System.out.println("Amigo eliminado: " + amigo);
+        System.out.println(amigo + " ha sido eliminado correctamente");
     }
     
     // Método para enviar un mensaje a un amigo
@@ -44,6 +44,11 @@ public class Perfil {
     {
     	return this.listaAmigos;
     }
+// Método para reaccionar a una publicación
+public void reaccionarPublicacion(String publicacion, String reaccion) {
+ System.out.println(nombre + " ha reaccionado a '" + publicacion + "' con \"" + reaccion +
+\"");
+}
     
     // Método para mostrar la información del perfil
     public void mostrarPerfil() {

@@ -44,6 +44,10 @@ public class Perfil {
     {
     	return this.listaAmigos;
     }
+// metodo para  reaccionar a una publicacion
+public void reaccionarPublicacion(string publicacion, String reaccionar){
+system.out.println(nombre + "ha reaccionado a" + publicacion + "con \" + reaccion + \"");
+}
     
     // Método para mostrar la información del perfil
     public void mostrarPerfil() {
@@ -52,3 +56,4 @@ public class Perfil {
         System.out.println("Amigos (" + listaAmigos.size() + "): " + listaAmigos);
     }
 }
+
